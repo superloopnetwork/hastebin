@@ -1,0 +1,2 @@
+# hastebin
+Hastebin Server
