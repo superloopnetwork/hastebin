@@ -8,7 +8,7 @@ cat file | paste
 ```
 Once the data has arrived on the server, a URL will be generated to view the output:
 ```
-wailit.loi@pc-netauto-001:~$ superloop host exec "show int status" --node pc-oobsw-105-iad4 | paste   
+superloop@hastebin:~$ superloop host exec "show int status" --node pc-oobsw-105-iad4 | paste   
 Password: 
 https://hastebin.ops.kobo.com/uvemalikez
 ```
@@ -19,7 +19,7 @@ First, ensure you have Ruby installed:
 apt install ruby
 ```
 ```
-root@pc-netauto-001:~# apt install ruby
+root@hastebin:~# apt install ruby
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -130,7 +130,7 @@ Parsing documentation for haste-0.2.3
 Installing ri documentation for haste-0.2.3
 Done installing documentation for multipart-post, faraday, haste after 0 seconds
 3 gems installed
-root@pc-netauto-001:~#
+root@hastebin:~#
 ```
 
 Now install the client:
@@ -153,7 +153,7 @@ source ~/.bashrc
 ```
 That's it! Now try to cat a file:
 ```
-wailit.loi@pc-netauto-001:~$ cat LICENSE.txt | paste
+superloop@hastebin:~$ cat LICENSE.txt | paste
 https://hastebin.ops.kobo.com/liyusedobe
 ```
 
