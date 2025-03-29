@@ -3,16 +3,22 @@ Hastebin Server
 
 Introduction
 haste-client is a simple client for uploading data to haste-server. All you do is pipe data in STDIN:
+```
 cat file | paste
+```
 Once the data has arrived on the server, a URL will be generated to view the output:
+```
 wailit.loi@pc-netauto-001:~$ superloop host exec "show int status" --node pc-oobsw-105-iad4 | paste   
 Password: 
 https://hastebin.ops.kobo.com/uvemalikez
-
+```
 Typically when a user would like to share an output from shell, a traditional copy and paste to the group chat/channel would occur or a screen share via zoom. This essentially clutters the channel and may be difficult for others to follow along. Furthermore, formatting of text may be offset. Users can now share the URL in chat for viewing as oppose to the entire output.
 Installation
 First, ensure you have Ruby installed:
+```
 apt install ruby
+```
+```
 root@pc-netauto-001:~# apt install ruby
 Reading package lists... Done
 Building dependency tree       
@@ -125,18 +131,31 @@ Installing ri documentation for haste-0.2.3
 Done installing documentation for multipart-post, faraday, haste after 0 seconds
 3 gems installed
 root@pc-netauto-001:~#
+```
+
 Now install the client:
+
+```
 gem install haste
+```
+
 Create an alias in your ~/.bashrc file:
+```
 vi ~/.bashrc
+```
 Once you're in ~/.bashrc, input the following:
+```
 alias paste="HASTE_SERVER=https://hastebin.ops.kobo.com/ haste"
+```
 Source your ~/.bashrc file so settings takes effect:
+```
 source ~/.bashrc
+```
 That's it! Now try to cat a file:
+```
 wailit.loi@pc-netauto-001:~$ cat LICENSE.txt | paste
 https://hastebin.ops.kobo.com/liyusedobe
-
+```
 
 
 
