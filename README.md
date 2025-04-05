@@ -145,7 +145,7 @@ vi ~/.bashrc
 ```
 Once you're in ~/.bashrc, input the following:
 ```
-alias paste="HASTE_SERVER=https://hastebin.ops.kobo.com/ haste"
+alias paste="HASTE_SERVER=https://<domain_name|ip_address>/ haste"
 ```
 Source your ~/.bashrc file so settings takes effect:
 ```
