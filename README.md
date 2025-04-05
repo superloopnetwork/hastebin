@@ -157,12 +157,3 @@ superloop@hastebin:~$ cat LICENSE.txt | paste
 https://hastebin.ops.kobo.com/liyusedobe
 ```
 
-
-
-
-
-
-
-Comment
-Task
-
